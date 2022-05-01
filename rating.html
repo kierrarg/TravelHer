@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <!-- need to come up with name -->
+  <title>Places</title>
+  <link rel="stylesheet" type="text/css" href="places.css">
+  <!-- will add style css folder and file -->
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Poppins:300,400,600,700&amp;lang=en" type="text/css"/>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+    <div class="head">
+        <img src="logostarhacks.png">
+    
+        <h2> The First Ever Online Resource for Female Travelers. </h2>
+    </div>
+    
+    <ul>
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="places.html">Places</a></li>
+      <li><a href="info.html">Safety Information</a></li>
+      <li><a href="rating.html" class="active">Rating System</a></li>
+      <li><a href="emergen.html">Emergency Contacts</a></li>
+      <li><a href="story.html">Share Your Story</a></li>
+      
+
+  </header>
+  <section> 
+    <img src="stars.png" id="stars">
+    <img src="moon.png" id="moon">
+    <img src="mountains_behind.png" id="mountains_behind">
+    <h2 id="text">Star Ratings</h2>
+    <a href="#sec" id="btn"> Learn More</a>
+    <!--img src="mountains_front.png" id="mountains_front" let mountains_front= document.getElementById('mountains_front')
+    mountains_front.style.top= value * 0 +'px';-->
+    <!-- placeholders---figure this out later! -->
+    
+  </section>
+  
+<!--Sarah-->
+<div class="sec" id="sec">
+  <h1>&#10026;Ratings&#10026;</h1>
+  <p>
+    On this page you will find the ratings each country has with respect to the its safety and its Overall Global Safety Index(GSI). The GSI is a safety rating out of 100, where 100 is the safest.</p>
+    <br>
+    <p>**The overall rating of a country does not always reflect the safety of each individual place. Some may be safer while others less and you should always be vigilent. </p>
+  <br>
+</div>
+</div>
+<br>
+<div class="countries">
+  <br>
+  <h2>Iceland: 95 GSI</h2>
+  <h3>&#9733;&#9733;&#9733;&#9733;&#9733</h3>
+  <p>
+    Iceland is one of the safest places to be, especially as a female traveller. It is an absolute geographical gem and has low crime rates. </p>
+
+  <h2>New Zealand: 90 GSI</h2>
+  <h3>&#9733;&#9733;&#9733;&#9733;&#9733</h3>
+  <p>
+    Among one of the safest contries to live in or visit, New Zealand is filled with natural wonders.</p>
+
+  <h2>Canada: 88 GSI</h2>
+  <h3>&#9733;&#9733;&#9733;&#9733;&#9733</h3>
+  <p>
+    A vast country with natural sights from mountains to lakes, tundras to forests; Canada is home to many of the world's safest cities for solo female travel. </p>
+
+  <h2>Australia: 86 GSI</h2>
+  <h3>&#9733;&#9733;&#9733;&#9733;&#9733</h3>
+  <p> 
+    One of the safest countries to visit overall, Australia houses wonderful scenery, and many beautiful low risk cities, both inland and coastal. </p>
+
+  <h2>Japan: 83 GSI</h2>
+  <h3>&#9733;&#9733;&#9733;&#9733;&#9733</h3>
+  <p>
+    Located in the Pacific Ocean and known as the "Land of the Rising Sun", Japan has a high safety index and low risk for women travelers.
+  </p>
+
+  <h2>Chile: 79 GSI</h2> 
+  <h3>&#9733;&#9733;&#9733;&#9733;&#9734</h3>
+  <p>
+    Highly diverse travel destination
+    from snowy scenery to rolling deserts, Chile also has a variety of different risk levels associated with each area. As a mojority it is known as relatively safe, but you should travel in company, and look into the risk factors of the different cities and areas. </p>
+
+  <h2>Uruguay: 77 GSI</h2> 
+  <h3>&#9733;&#9733;&#9733;&#9733;&#9734</h3>
+  <p>
+    Known as the Switzerland of South America, Urugruay is a safe space to travel to and stands at a low risk level for women travelers. </p>
+
+  <h2>India: 47 GSI</h2> 
+  <h3>&#9733;&#9733;&#9733;&#9734;&#9734</h3>
+  <p>
+    With its high population density certain places in India can be potentially dangerous which greatly bring its GSI down. There are many relatively safe places to visity in India, yet solo travel is not encouraged. </p>
+
+  <h2> 
+    The Dominican Republic of the Congo (DRC): 21 GSI</h2> 
+    <h3>&#9733;&#9733;&#9734;&#9734;&#9734</h3>
+ 
+    <p>
+      Although it is a beautiful country, it has suffered lots of tragedy and the presence of armed troops alongside the ongoing conflicts make the country a very dangerous place to visit.
+      </p>
+      <br>
+  </div>
+  <br>
+    
+  <script>
+    let stars = document.getElementById('stars')
+    let moon = document.getElementById('moon')
+    let mountains_behind= document.getElementById('mountains_behind')
+    let text= document.getElementById('text')
+    let btn= document.getElementById('btn')
+    
+    let header = document.querySelector('header');
+
+    window.addEventListener('scroll', function(){
+      let value = window.scrollY;
+      stars.style.left= value * 0.25 + 'px';
+      moon.style.top= value * 1.05 +'px';
+      mountains_behind.style.top= value * 0.05 +'px';
+      
+      text.style.marginRight= value * 4 +'px';
+      text.style.marginTop= value * 1.5 +'px';
+      btn.style.marginTop= value * 1.5 +'px';
+      header.style.top = value * 0.5 + 'px';
+    })
+  </script>
+</body>
+
+</html>
+
+
+<!-- to add a reference URL: https://www.travelsafe-abroad.com/countries/-->

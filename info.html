@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <!-- need to come up with name -->
+  <title>Safety Information</title>
+  <link rel="stylesheet" type="text/css" href="places.css">
+  <!-- will add style css folder and file -->
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Poppins:300,400,600,700&amp;lang=en" type="text/css"/>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+ 
+</head>
+<body>
+  <header>
+    <!-- Kierra -->
+    <div class="container">
+    <div class="head">
+        <img src="logostarhacks.png">
+    
+        <h2> The First Ever Online Resource for Female Travelers. </h2>
+    </div>
+    
+    <ul>
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="places.html">Places</a></li>
+      <li><a href="info.html" class="active">Safety Information</a></li>
+      <li><a href="rating.html">Rating System</a></li>
+      <li><a href="emergen.html">Emergency Contacts</a></li>
+      <li><a href="story.html">Share Your Story</a></li>
+      
+
+  </header>
+  <section> 
+    <img src="stars.png" id="stars">
+    <img src="moon.png" id="moon">
+    <img src="mountains_behind.png" id="mountains_behind">
+    <h2 id="text">Safety Information</h2>
+    <a href="#sec" id="btn"> Tips </a>
+
+    
+  </section>
+  <div class="sec" id="sec">
+    <h2> Quotes</h2>
+  </div>
+  <script>
+    let stars = document.getElementById('stars')
+    let moon = document.getElementById('moon')
+    let mountains_behind= document.getElementById('mountains_behind')
+    let text= document.getElementById('text')
+    let btn= document.getElementById('btn')
+    
+    let header = document.querySelector('header');
+
+    window.addEventListener('scroll', function(){
+      let value = window.scrollY;
+      stars.style.left= value * 0.25 + 'px';
+      moon.style.top= value * 1.05 +'px';
+      mountains_behind.style.top= value * 0.05 +'px';
+      
+      text.style.marginRight= value * 4 +'px';
+      text.style.marginTop= value * 1.5 +'px';
+      btn.style.marginTop= value * 1.5 +'px';
+      header.style.top = value * 0.5 + 'px';
+    })
+  </script>
+  <div class="allquotes">
+
+  <div class="bubble bubble-bottom-left">"As women, we are often vulnerable and must take charge of our own safety - we are the only ones who truly can"  Lorna Selig (CEO of Safe4Life)</div>
+
+  <div class="speech-bubble"> "As a woman, I never feel safe traveling alone. When we travel solo, we do so with our well-grounded fears in tow." </div>
+
+  <div class="speech"> “When on a train in Italy, the conductor was trying relentlessly to get me into bed. After “trying to be nice” for a while and fending him off physically, I screamed as loudly as I could in Italian, and he ran to another part of the train. Unsettling because I knew he was somewhere on the train. I didn’t go to sleep.” </div>
+  
+
+  </div>
+<!-- Julia -->
+    <div class="tips"> 
+      <h1>Traveling Solo Tips</h1>
+        <h2>1. Look Confident</h2>
+        <p>Robbers, kidnappers, and others usually target those they think are weak. They will be more intimidated if they see a confident person walk down the street. In addition, by looking and acting confident, you will feel more confident.  </p>
+        <h2>2. Get in Physical Shape </h2>
+        <p>By regularly running, you will be more prepared to run fast in case danger comes when traveling. The stronger your body is the better chance you will have at fighting off an attacker, we recommend going as far as taking self defense courses.</p>
+        <h2>3. Dressing Appropriately</h2>
+        <p>This does not mean that you cannot dress how you like or that you must dress modestly. Wearing clothing that would be difficult to remove or cut lowers your chances of being attacked by a potential rapist as many of them look for women wearing loose clothing that could be easily removed or cut. They also search for women with longer hair or who have their hair tied up in a ponytail as it is easy to grab.</p>
+        <h2>4. Do Not Carry a Weapon</h2>
+        <p>It is not safe to carry a weapon while travelling, even if you plan to use it as a mechanism of self defense it could likely be used against you.</p>
+        <h2>5. Carry Your Own Items</h2>
+        <p>Though some are well intentioned when they offer to carry your bags for you, it is always in your best interest to carry your own items to prevent theft or items being placed in your bags</p>
+        <h2>6. Stay in Touch about Your Whereabouts</h2>
+        <p>Always make sure to bring a charged phone that has your family, friends, or other loved ones' contacts saved and ready to go. Also, be sure to frequently tell them which places you are heading or set up a location tracker that connects your exact location to your loved ones.</p>
+        <h2>7. GFG</h2>
+        <p>In the event that you have fallen victim to an attack always remember GFG, <b>GO FOR THE GROIN.</b></p>
+
+  </body>
+
+</html>

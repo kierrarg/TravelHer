@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <!-- need to come up with name -->
+  <title>AUSTRALIA</title>
+  <link rel="stylesheet" type="text/css" href="places.css">
+  <!-- will add style css folder and file -->
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Poppins:300,400,600,700&amp;lang=en" type="text/css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+ 
+</head>
+<body>
+  <header>
+    <div class="container">
+    <div class="head">
+        <img src="logostarhacks.png">
+    
+        <h2> The First Ever Online Resource for Female Travelers. </h2>
+    </div>
+    
+    <ul>
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="places.html" class="active">Places</a></li>
+      <li><a href="info.html">Safety Information</a></li>
+      <li><a href="rating.html">Rating System</a></li>
+      <li><a href="emergen.html">Emergency Contacts</a></li>
+      <li><a href="story.html">Share Your Story</a></li>
+      
+
+  </header>
+  <section> 
+    <img src="stars.png" id="stars">
+    <img src="moon.png" id="moon">
+    <img src="mountains_behind.png" id="mountains_behind">
+    <h2 id="text">AUSTRALIA</h2>
+    <a href="#mission" id="btn"> EXPLORE</a>
+    <!--img src="mountains_front.png" id="mountains_front" let mountains_front= document.getElementById('mountains_front')
+    mountains_front.style.top= value * 0 +'px';-->
+    <!-- placeholders---figure this out later! -->
+    
+  </section>
+  <!-- Julia -->
+<div class="main">
+    <div class="mission" id="mission"> 
+     
+      <h1> &#10026;   For women, by women.   &#10026;</h1>
+      <h2>Australia(86) FIVE STARS: 
+</h2>
+        <p> considered one of the safest countries in the world overall</p>
+        <div class= "row">
+          <div class="course-col-eu">
+            <h3>Sydney (low risk)</h3>
+            <p>Enjoy the sunny beaches, the stunningly beautiful harbor with the Harbour Bridge and Opera House. </p>
+          </div>
+          <div class="course-col-eu">
+            <h3>Adelaide (low risk)</h3>
+            <p>The capital of South Australia, Adelaide is one of the first cities to grant women the right to vote, and has significantly low sexual discrimination.
+A very diverse city, whether you want to hike to a waterfall, visit a zoo, go to the mall, or even go watch a match at the oval, Adelaide’s got it all.
+</p>
+          </div>
+          
+        </div>
+      </div>
+
+</div>
+</section>
+
+
+  <script>
+    let stars = document.getElementById('stars')
+    let moon = document.getElementById('moon')
+    let mountains_behind= document.getElementById('mountains_behind')
+    let text= document.getElementById('text')
+    let btn= document.getElementById('btn')
+    
+    let header = document.querySelector('header');
+
+    window.addEventListener('scroll', function(){
+      let value = window.scrollY;
+      stars.style.left= value * 0.25 + 'px';
+      moon.style.top= value * 1.05 +'px';
+      mountains_behind.style.top= value * 0.05 +'px';
+      
+      text.style.marginRight= value * 4 +'px';
+      text.style.marginTop= value * 1.5 +'px';
+      btn.style.marginTop= value * 1.5 +'px';
+      header.style.top = value * 0.5 + 'px';
+    })
+  </script>
+
+</body>
+</html>

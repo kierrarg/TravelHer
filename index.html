@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <!-- need to come up with name -->
+  <title>TravelHer</title>
+  <link rel="stylesheet" type="text/css" href="places.css">
+  <!-- will add style css folder and file -->
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Poppins:300,400,600,700&amp;lang=en" type="text/css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+ 
+</head>
+<body>
+
+  <header>
+    <div class="container">
+    <div class="head">
+        <img src="logostarhacks.png">
+    
+        <h2> The First Ever Online Resource for Female Travelers. </h2>
+    </div>
+    
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="places.html">Places</a></li>
+      <li><a href="info.html">Safety Information</a></li>
+      <li><a href="rating.html">Rating System</a></li>
+      <li><a href="emergen.html">Emergency Contacts</a></li>
+      <li><a href="story.html">Share Your Story</a></li>
+      
+
+  </header>
+  
+  <section> 
+    <img src="stars.png" id="stars">
+    <img src="moon.png" id="moon">
+    <img src="mountains_behind.png" id="mountains_behind">
+    <h2 id="text">TravelHer</h2>
+    <a href="#mission" id="btn"> Our Mission</a>
+    
+  </section>
+  <!-- Julia -->
+<div class="main">
+    <div class="mission" id="mission"> 
+     
+      <h1> &#10026;   For women, by women.   &#10026;</h1>
+      <h2>Our Mission</h2>
+        <p>
+TravelHer aims to create a safe and flexible space and community for women who love to travel. We provide resources and information that can help guide women in making the safest possible travel plans and routes. Our mission is to be the bridge that connects women across the world and empowers them to travel safely and be independent!  </p>
+      <h2>Our website can be utilized for the following:</h2>
+      <p> Traveling can be scary especially if you do it alone. TravelHer hopes to eliminate those fears so you can travel stress-free!</p>
+      <p><br></p>
+      <p>Not sure where to go and want some ideas? Head over to Locations for our recommendations spanning all the continents!</p>
+      <p><br></p>
+      <p>Already planned a trip and need safety tip? Our Safety Information tab is your one stop shop for our specially curated tips.</p>
+      <p><br></p>
+      <p> Planning on traveling to another continent? Our international Star Rating System allows you to view the overall safety of that location compared to others so you know what you're getting into!</p>
+      <p><br></p>
+      <p>Emergency Contacts has helpline information for several countries so you can get the help you need ASAP!</p>
+      <p><br></p>
+      <p>Had an unforgettable experience during your trip? Share it with us (anonymously ofcourse!) so women all over the world can learn!</p>
+      <p><br></p>
+      <p> Our goal at the end of the day is to empower women to take their travel plans into their owns hands so they can connect and collaborate with others and explore the world on their own terms.</p>
+  </div>
+<div class="stats"> 
+  <h2>The Current Statistics</h2>
+    <div class="facts">
+        <p>
+  &#10026; <b>45%</b> of female travelers feel less safe about traveling than 5 years ago</p>
+  <p> &#10026; <b>84%</b> reported that their employers did not provide travel safety resources or were not aware of such tools. </p>
+  <p> &#10026; <b>63%</b> of women think about safety frequently while traveling.</p>
+      </div>
+  <p>Source: <a href="https://www.travelguard.com/travel-resources/travel-safety/womens-travel-safety#:~:text=45%25%20of%20female%20travelers%20feel,always%20or%20frequently%20while%20traveling." target="_blank" class="link-btn"> The Travel Guard</a></p>
+  <br>
+
+    </div>
+      <h2>Who are we?</h2>
+      <p>TravelHer is built from scratch by women for women. Away from the screen we are 4 young women who realised that there was a lack of clarity and information out there for female travelers. TravelHer does all that work for you! We have done our best to gather reliable statistical information and helpful tips so you can focus on enjoying your trip! </p>
+      <p>Due to the COVID-19 pandemic, traveling now has additional risks, so we wish you a healthy and safe journey!</p>
+      <br>
+    </div>
+
+
+  <script>
+    let stars = document.getElementById('stars')
+    let moon = document.getElementById('moon')
+    let mountains_behind= document.getElementById('mountains_behind')
+    let text= document.getElementById('text')
+    let btn= document.getElementById('btn')
+    
+    let header = document.querySelector('header');
+
+    window.addEventListener('scroll', function(){
+      let value = window.scrollY;
+      stars.style.left= value * 0.25 + 'px';
+      moon.style.top= value * 1.05 +'px';
+      mountains_behind.style.top= value * 0.05 +'px';
+      
+      text.style.marginRight= value * 4 +'px';
+      text.style.marginTop= value * 1.5 +'px';
+      btn.style.marginTop= value * 1.5 +'px';
+      header.style.top = value * 0.5 + 'px';
+    })
+  </script>
+  <footer>
+  <p>Made for StarHacks II- Building Bridges</p>
+</footer>
+
+</body>
+</html>

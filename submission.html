@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <!-- need to come up with name -->
+  <title>Safety Information</title>
+  <link rel="stylesheet" type="text/css" href="places.css">
+  <!-- will add style css folder and file -->
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Poppins:300,400,600,700&amp;lang=en" type="text/css"/>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+ 
+</head>
+<body>
+  <header>
+    <!-- Kierra -->
+    <div class="container">
+    <div class="head">
+        <img src="logostarhacks.png">
+    
+        <h2> The First Ever Online Resource for Female Travelers. </h2>
+    </div>
+    
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="places.html">Places</a></li>
+      <li><a href="info.html">Safety Information</a></li>
+      <li><a href="rating.html">Star System</a></li>
+      <li><a href="emergen.html">Emergency Contacts</a></li>
+      <li><a href="story.html">Share Your Story</a></li>
+      
+
+  </header>
+  <section> 
+    <img src="stars.png" id="stars">
+    <img src="moon.png" id="moon">
+    <img src="mountains_behind.png" id="mountains_behind">
+    <h2 id="text">Thank You For Sharing</h2>
+    <a href="#sec" id="btn"> </a>
+    <!--img src="mountains_front.png" id="mountains_front" let mountains_front= document.getElementById('mountains_front')
+    mountains_front.style.top= value * 0 +'px';-->
+    <!-- placeholders---figure this out later! -->
+    
+  </section>
+  <div class="sec" id="sec">
+    <h2> We deeply appreciate you sharing your story, we hope that one day through sharing our experiences we can ignite change.</h2>
+  </div>
+  <script>
+    let stars = document.getElementById('stars')
+    let moon = document.getElementById('moon')
+    let mountains_behind= document.getElementById('mountains_behind')
+    let text= document.getElementById('text')
+    let btn= document.getElementById('btn')
+    
+    let header = document.querySelector('header');
+
+    window.addEventListener('scroll', function(){
+      let value = window.scrollY;
+      stars.style.left= value * 0.25 + 'px';
+      moon.style.top= value * 1.05 +'px';
+      mountains_behind.style.top= value * 0.05 +'px';
+      
+      text.style.marginRight= value * 4 +'px';
+      text.style.marginTop= value * 1.5 +'px';
+      btn.style.marginTop= value * 1.5 +'px';
+      header.style.top = value * 0.5 + 'px';
+    })
+  </script>
+
